@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumTraining" duration-ms="27628" started-at="2021-03-21T17:54:58Z" finished-at="2021-03-21T17:55:26Z">
+    <groups>
+    </groups>
+    <test name="TestNGScripts" duration-ms="27628" started-at="2021-03-21T17:54:58Z" finished-at="2021-03-21T17:55:26Z">
+      <class name="com.qa.testcases.Testcase1">
+        <test-method status="PASS" signature="openbrowserTest()[pri:0, instance:com.qa.testcases.Testcase1@1e5031f]" name="openbrowserTest" is-config="true" duration-ms="5890" started-at="2021-03-21T17:54:58Z" finished-at="2021-03-21T17:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowserTest -->
+        <test-method status="PASS" signature="SearchboxTest()[pri:49, instance:com.qa.testcases.Testcase1@1e5031f]" name="SearchboxTest" duration-ms="5322" started-at="2021-03-21T17:55:04Z" finished-at="2021-03-21T17:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchboxTest -->
+        <test-method status="PASS" signature="mainPageTest()[pri:50, instance:com.qa.testcases.Testcase1@1e5031f]" name="mainPageTest" duration-ms="4295" started-at="2021-03-21T17:55:09Z" finished-at="2021-03-21T17:55:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainPageTest -->
+        <test-method status="PASS" signature="CreateAccountPageTest()[pri:51, instance:com.qa.testcases.Testcase1@1e5031f]" name="CreateAccountPageTest" duration-ms="6037" started-at="2021-03-21T17:55:14Z" finished-at="2021-03-21T17:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccountPageTest -->
+        <test-method status="PASS" signature="dropdownTest()[pri:52, instance:com.qa.testcases.Testcase1@1e5031f]" name="dropdownTest" duration-ms="5488" started-at="2021-03-21T17:55:20Z" finished-at="2021-03-21T17:55:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.Testcase1@1e5031f]" name="closeBrowser" is-config="true" duration-ms="470" started-at="2021-03-21T17:55:25Z" finished-at="2021-03-21T17:55:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.Testcase1 -->
+    </test> <!-- TestNGScripts -->
+  </suite> <!-- SeleniumTraining -->
+</testng-results>

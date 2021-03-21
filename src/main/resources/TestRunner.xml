@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="SeleniumTraining" verbose="1" >
+  <test name="TestNGScripts" >
+    <classes>
+      <class name="com.qa.testcases.Testcase1"/>
+ 
+    </classes>
+  </test>
+ 
+</suite>
