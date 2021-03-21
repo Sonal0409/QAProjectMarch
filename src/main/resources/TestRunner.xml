@@ -4,7 +4,7 @@
   <test name="TestNGScripts" >
     <classes>
       <class name="com.qa.testcases.Testcase1"/>
- 
+      <class name="com.qa.testcases.TestCase2"/>
     </classes>
   </test>
  
