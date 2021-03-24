@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SeleniumTraining">
-              <span class="suite-name border-passed">SeleniumTraining</span>
+              <span class="suite-name border-failed">SeleniumTraining</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SeleniumTraining" class="hide-methods failed suite-SeleniumTraining"> (hide)</a> <!-- hide-methods failed suite-SeleniumTraining -->
+                      <a href="#" panel-name="suite-SeleniumTraining" class="show-methods failed suite-SeleniumTraining"> (show)</a> <!-- show-methods failed suite-SeleniumTraining -->
+                    </span>
+                    <div class="method-list-content failed suite-SeleniumTraining">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTraining" title="com.qa.testcases.Testcase1" hash-for-method="CreateAccountPageTest">CreateAccountPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTraining" title="com.qa.testcases.Testcase1" hash-for-method="SearchboxTest">SearchboxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SeleniumTraining -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,16 +119,6 @@
                       <a href="#" panel-name="suite-SeleniumTraining" class="show-methods passed suite-SeleniumTraining"> (show)</a> <!-- show-methods passed suite-SeleniumTraining -->
                     </span>
                     <div class="method-list-content passed suite-SeleniumTraining">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTraining" title="com.qa.testcases.Testcase1" hash-for-method="CreateAccountPageTest">CreateAccountPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTraining" title="com.qa.testcases.Testcase1" hash-for-method="SearchboxTest">SearchboxTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SeleniumTraining" title="com.qa.testcases.Testcase1" hash-for-method="dropdownTest">dropdownTest</a> <!-- method navigator-link -->
@@ -132,9 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SeleniumTraining" class="panel SeleniumTraining">
-          <div class="suite-SeleniumTraining-class-passed">
+          <div class="suite-SeleniumTraining-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.testcases.Testcase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,6 +152,24 @@
                   <a name="CreateAccountPageTest">
                   </a> <!-- CreateAccountPageTest -->
                   <span class="method-name">CreateAccountPageTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 3.000
+  (Session info: chrome=89.0.4389.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-N0G0NBDP&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\VISHAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9a4669622c67752f91e3aea403c86a1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.qa.testcases.Testcase1.CreateAccountPageTest(Testcase1.java:67)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -150,8 +177,34 @@
                   <a name="SearchboxTest">
                   </a> <!-- SearchboxTest -->
                   <span class="method-name">SearchboxTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 3.000
+  (Session info: chrome=89.0.4389.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-N0G0NBDP&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\VISHAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9a4669622c67752f91e3aea403c86a1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.qa.testcases.Testcase1.SearchboxTest(Testcase1.java:45)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTraining-class-failed -->
+          <div class="suite-SeleniumTraining-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.Testcase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="dropdownTest">
@@ -222,26 +275,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreateAccountPageTest')
+data.setCell(0, 1, 'dropdownTest')
 data.setCell(0, 2, 'com.qa.testcases.Testcase1')
-data.setCell(0, 3, 6037);
+data.setCell(0, 3, 5924);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'dropdownTest')
+data.setCell(1, 1, 'SearchboxTest')
 data.setCell(1, 2, 'com.qa.testcases.Testcase1')
-data.setCell(1, 3, 5488);
+data.setCell(1, 3, 5639);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchboxTest')
+data.setCell(2, 1, 'mainPageTest')
 data.setCell(2, 2, 'com.qa.testcases.Testcase1')
-data.setCell(2, 3, 5322);
+data.setCell(2, 3, 4117);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'mainPageTest')
+data.setCell(3, 1, 'CreateAccountPageTest')
 data.setCell(3, 2, 'com.qa.testcases.Testcase1')
-data.setCell(3, 3, 4295);
+data.setCell(3, 3, 3776);
 window.suiteTableData['SeleniumTraining']= { tableData: data, tableDiv: 'times-div-SeleniumTraining'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-SeleniumTraining">
               </div> <!-- times-div-SeleniumTraining -->
             </div> <!-- times-div -->
@@ -273,24 +326,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">SearchboxTest</span>
-                <span class="method-start">5932 ms</span>
+                <span class="method-start">7942 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mainPageTest</span>
-                <span class="method-start">11306 ms</span>
+                <span class="method-start">13596 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">CreateAccountPageTest</span>
-                <span class="method-start">15603 ms</span>
+                <span class="method-start">17719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dropdownTest</span>
-                <span class="method-start">21642 ms</span>
+                <span class="method-start">21498 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">27138 ms</span>
+                <span class="method-start">27423 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

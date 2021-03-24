@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumTraining]">
-  <test thread-count="5" name="TestNGScripts(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SeleniumTraining]">
+  <test thread-count="5" verbose="0" name="TestNGScripts(failed)">
     <classes>
       <class name="com.qa.testcases.Testcase1">
         <methods>
           <include name="SearchboxTest"/>
           <include name="openbrowserTest"/>
           <include name="closeBrowser"/>
-          <include name="CreateAccountPageTest"/>
         </methods>
       </class> <!-- com.qa.testcases.Testcase1 -->
     </classes>

@@ -22,7 +22,7 @@ public class Testcase1 {
 		
 	driver = new ChromeDriver();  // open chrome browser
 		
-	// maximise your screen
+	// maximise your browser
 		driver.manage().window().maximize();
 	
 	// 	opne the url on the browser
@@ -41,7 +41,7 @@ public class Testcase1 {
 	public void SearchboxTest() throws InterruptedException
 	{
 	driver.findElement(By.xpath("//input[@id='searchInput']")).sendKeys("seleniumAutomation");
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
 	
 	}
@@ -49,7 +49,7 @@ public class Testcase1 {
 	@Test(priority='2')
 	public void mainPageTest() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		String title=driver.getTitle();  // fetch title of the page
 		System.out.println("the title of the new page is : "+ title);
 		// click on main Page link
