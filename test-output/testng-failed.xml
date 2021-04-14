@@ -8,7 +8,6 @@
           <include name="SearchboxTest"/>
           <include name="openbrowserTest"/>
           <include name="closeBrowser"/>
-          <include name="CreateAccountPageTest"/>
         </methods>
       </class> <!-- com.qa.testcases.Testcase1 -->
     </classes>

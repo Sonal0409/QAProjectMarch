@@ -12,14 +12,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Testcase1 {
+	
 	public static WebDriver driver; 
 	
 	@BeforeClass
 	public void openbrowserTest()  // will be called as test method
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		
+		System.setProperty("webdriver.chrome.driver", 
+				"C:\\Users\\vishal mittal\\Downloads\\chromedriver_win32 (21)\\chromedriver.exe");	
+
 	driver = new ChromeDriver();  // open chrome browser
 		
 	// maximise your browser
@@ -28,11 +30,13 @@ public class Testcase1 {
 	// 	opne the url on the browser
 		
 		driver.get("https://www.wikipedia.org/");
-		
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
 		
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		
+		
 		String title=driver.getTitle();  // fetch title of the page
+		
 		System.out.println("the title of serach page is : "+ title);	
 		
 		
@@ -40,10 +44,12 @@ public class Testcase1 {
 	@Test(priority='1')
 	public void SearchboxTest() throws InterruptedException
 	{
+		driver.findElement((By.xpath("//input[@id='searchInput']"))).isDisplayed();
+		
 	driver.findElement(By.xpath("//input[@id='searchInput']")).sendKeys("seleniumAutomation");
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	
+	Thread.sleep(5000);
 	}
 	
 	@Test(priority='2')
